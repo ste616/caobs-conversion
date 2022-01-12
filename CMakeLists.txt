@@ -8,3 +8,6 @@ add_executable(f_test_refvap src/fortran_tests/test_refvap.f90 src/caobs_main/re
 # The following line should be changed and uncommented when a suitable
 # C conversion is ready to be built and tested.
 #add_executable(c_test_refvap src/c_tests/test_refvap.c src/caobs_main/refvap.c)
+add_executable(c_test_refvap src/c_tests/test_refvap.c src/caobs_main/refvap.c)
+
+target_link_libraries(c_test_refvap m)
